@@ -17,6 +17,10 @@
 
 AHawkProjectCharacter::AHawkProjectCharacter()
 {
+	// Create mesh for skateboard
+	skateboardMesh = CreateDefaultSubobject<UStaticMeshComponent>("skateboardMesh");
+	skateboardMesh->SetupAttachment(RootComponent);
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -49,7 +53,9 @@ AHawkProjectCharacter::AHawkProjectCharacter()
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
-	skateboardMesh = CreateDefaultSubobject<UStaticMeshComponent>("skateboardMesh");
+	// Create capsule component that will drive physics calculations
+	physicsCapsule = CreateDefaultSubobject<UCapsuleComponent>("physicsCapsule");
+	physicsCapsule->SetupAttachment(RootComponent);
 }
 
 //////////////////////////////////////////////////////////////////////////

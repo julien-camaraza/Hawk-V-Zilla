@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeHawkProjectCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_HawkProject();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AHawkProjectCharacter::StaticRegisterNativesAHawkProjectCharacter()
@@ -42,6 +43,10 @@ void EmptyLinkFunctionForGeneratedCodeHawkProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_physicsCapsule_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_physicsCapsule;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
 #endif
@@ -92,6 +97,15 @@ void EmptyLinkFunctionForGeneratedCodeHawkProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHawkProjectCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_FollowCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_FollowCamera_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_physicsCapsule_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HawkProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_physicsCapsule = { "physicsCapsule", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHawkProjectCharacter, physicsCapsule), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_physicsCapsule_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_physicsCapsule_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "Comment", "/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
@@ -120,6 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeHawkProjectCharacter() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHawkProjectCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_FollowCamera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_physicsCapsule,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHawkProjectCharacter_Statics::NewProp_skateboardMesh,
@@ -151,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeHawkProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHawkProjectCharacter, 1948965970);
+	IMPLEMENT_CLASS(AHawkProjectCharacter, 318914909);
 	template<> HAWKPROJECT_API UClass* StaticClass<AHawkProjectCharacter>()
 	{
 		return AHawkProjectCharacter::StaticClass();

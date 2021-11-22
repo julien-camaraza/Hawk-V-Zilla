@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHawkProjectCharacter); \
 
 #define HawkProject_Source_HawkProject_HawkProjectCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AHawkProjectCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AHawkProjectCharacter, FollowCamera); }
+	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AHawkProjectCharacter, FollowCamera); } \
+	FORCEINLINE static uint32 __PPO__physicsCapsule() { return STRUCT_OFFSET(AHawkProjectCharacter, physicsCapsule); }
 
 
 #define HawkProject_Source_HawkProject_HawkProjectCharacter_h_10_PROLOG

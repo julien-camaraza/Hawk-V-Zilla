@@ -20,6 +20,11 @@ class AHawkProjectCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+	UPROPERTY(EditAnywhere, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	class UCapsuleComponent* physicsCapsule;
+
+
+
 public:
 	AHawkProjectCharacter();
 
@@ -33,6 +38,8 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Components")
 	class UStaticMeshComponent* skateboardMesh;
+
+
 
 protected:
 
