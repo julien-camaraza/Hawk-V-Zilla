@@ -59,7 +59,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AC_Skater); \
 
 
 #define HawkProject_Source_HawkProject_C_Skater_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__root() { return STRUCT_OFFSET(AC_Skater, root); } \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AC_Skater, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AC_Skater, FollowCamera); }
 

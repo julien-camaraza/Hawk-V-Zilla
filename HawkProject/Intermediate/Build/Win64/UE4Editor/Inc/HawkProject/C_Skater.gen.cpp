@@ -17,9 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 	HAWKPROJECT_API UClass* Z_Construct_UClass_AC_Skater();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_HawkProject();
-	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -38,10 +38,6 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_root_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_root;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
@@ -49,6 +45,10 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_root_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_root;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_physicsCapsule_MetaData[];
 #endif
@@ -74,6 +74,14 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_moveRightSave;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_moveForward_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_moveForward;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_speed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_accelerating_MetaData[];
 #endif
 		static void NewProp_accelerating_SetBit(void* Obj);
@@ -93,16 +101,6 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 		{ "ModuleRelativePath", "C_Skater.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData[] = {
-		{ "Category", "Components" },
-		{ "Comment", "// Root Component\n" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "C_Skater.h" },
-		{ "ToolTip", "Root Component" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_root = { "root", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_CameraBoom_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -125,6 +123,16 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_FollowCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_FollowCamera_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData[] = {
+		{ "Category", "Components" },
+		{ "Comment", "// Root Component\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "C_Skater.h" },
+		{ "ToolTip", "Root Component" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_root = { "root", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_root_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_physicsCapsule_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -175,8 +183,22 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_moveRightSave = { "moveRightSave", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, moveRightSave), METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_moveRightSave_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_moveRightSave_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_moveForward_MetaData[] = {
 		{ "Category", "Properties" },
+		{ "ModuleRelativePath", "C_Skater.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_moveForward = { "moveForward", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, moveForward), METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_moveForward_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_moveForward_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_speed_MetaData[] = {
+		{ "Category", "Properties" },
+		{ "ModuleRelativePath", "C_Skater.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AC_Skater, speed), METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_speed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating_MetaData[] = {
+		{ "Category", "Animation" },
 		{ "ModuleRelativePath", "C_Skater.h" },
 	};
 #endif
@@ -186,15 +208,17 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating = { "accelerating", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AC_Skater), &Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating_SetBit, METADATA_PARAMS(Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AC_Skater_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_FollowCamera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_root,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_physicsCapsule,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_skateboardMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_characterMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_hitboxCapsule,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_steeringRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_moveRightSave,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_moveForward,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AC_Skater_Statics::NewProp_accelerating,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AC_Skater_Statics::StaticCppClassTypeInfo = {
@@ -224,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeC_Skater() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AC_Skater, 3047491215);
+	IMPLEMENT_CLASS(AC_Skater, 2326599420);
 	template<> HAWKPROJECT_API UClass* StaticClass<AC_Skater>()
 	{
 		return AC_Skater::StaticClass();

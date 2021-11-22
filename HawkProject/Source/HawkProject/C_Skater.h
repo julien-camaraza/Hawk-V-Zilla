@@ -10,9 +10,7 @@ UCLASS()
 class HAWKPROJECT_API AC_Skater : public APawn
 {
 	GENERATED_BODY()
-		// Root Component
-		UPROPERTY(VisibleAnywhere, Category = "Components")
-		class USceneComponent* root;
+
 
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -26,18 +24,25 @@ public:
 	// Sets default values for this pawn's properties
 	AC_Skater();
 
+	// Root Component
+	UPROPERTY(VisibleAnywhere, Category = "Components")
+	class USceneComponent* root;
+
+	FVector force;
+	FVector currentVelocity; 
+	
 	//Creates main public variables to be filled in by blueprints
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
-		class UCapsuleComponent* physicsCapsule;
+	class UCapsuleComponent* physicsCapsule;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		class UStaticMeshComponent* skateboardMesh;
+	class UStaticMeshComponent* skateboardMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		class USkeletalMeshComponent* characterMesh;
+	class USkeletalMeshComponent* characterMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		class UCapsuleComponent* hitboxCapsule;
+	class UCapsuleComponent* hitboxCapsule;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
 	float steeringRate = .25;
@@ -46,8 +51,14 @@ public:
 	float moveRightSave = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
-	bool accelerating = false;
+	float moveForward = 0;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
+	float speed = 1000;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool accelerating = false;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
