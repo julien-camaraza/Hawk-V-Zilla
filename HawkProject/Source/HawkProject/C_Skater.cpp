@@ -54,8 +54,17 @@ void AC_Skater::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//Get the physics capsule location and move the skateboard (and it's children) to it.
 	FVector capsuleLocation = physicsCapsule->GetComponentLocation();
 	skateboardMesh->SetWorldLocation(capsuleLocation);
+
+	//Rotate the physics capsule on input
+	//physicsCapsule->AddRelativeRotation(FRotator((steeringRate * moveRightSave), 0.0f, 0.0f));
+
+	//FQuat capsuleRotation = physicsCapsule->GetComponentQuat();
+	//capsuleRotation = FQuat(0.f, 0.f, capsuleRotation.Z, capsuleRotation.W);
+
+	//skateboardMesh->SetWorldRotation(capsuleRotation);
 
 }
 

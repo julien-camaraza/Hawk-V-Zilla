@@ -39,6 +39,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UCapsuleComponent* hitboxCapsule;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
+	float steeringRate = .25;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
+	float moveRightSave = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
+	bool accelerating = false;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

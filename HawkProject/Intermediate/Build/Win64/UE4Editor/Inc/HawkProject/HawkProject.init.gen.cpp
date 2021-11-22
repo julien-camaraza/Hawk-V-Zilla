@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeHawkProject_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x36426B62,
+				0xA24B3AC1,
 				0x8F29EA08,
 				METADATA_PARAMS(nullptr, 0)
 			};
