@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HawkProject",
+			"Path": "F:\\Studio 2\\Hawk-V-Zilla\\HawkUE4\\HawkProject\\Source\\HawkProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HawkProjectEditor",
+			"Path": "F:\\Studio 2\\Hawk-V-Zilla\\HawkUE4\\HawkProject\\Source\\HawkProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HawkProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{14669212-00D4-47B2-9AD0-A5632E73FAFD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HawkProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HawkProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{F1947930-062D-4A60-BD57-F50241A01C4F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HawkProject">
+      <UniqueIdentifier>{C95373DF-3A73-4870-8E00-FE5E27085380}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HawkProject\HawkProject.Build.cs">
+      <Filter>Source\HawkProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HawkProject\HawkProject.cpp">
+      <Filter>Source\HawkProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HawkProject\HawkProject.h">
+      <Filter>Source\HawkProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HawkProject\HawkProjectCharacter.cpp">
+      <Filter>Source\HawkProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HawkProject\HawkProjectCharacter.h">
+      <Filter>Source\HawkProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HawkProject\HawkProjectGameMode.cpp">
+      <Filter>Source\HawkProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HawkProject\HawkProjectGameMode.h">
+      <Filter>Source\HawkProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

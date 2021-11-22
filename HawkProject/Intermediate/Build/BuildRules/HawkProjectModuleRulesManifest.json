@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"F:\\Studio 2\\Hawk-V-Zilla\\HawkUE4\\HawkProject\\Source\\HawkProject\\HawkProject.Build.cs",
+		"F:\\Studio 2\\Hawk-V-Zilla\\HawkUE4\\HawkProject\\Source\\HawkProject.Target.cs",
+		"F:\\Studio 2\\Hawk-V-Zilla\\HawkUE4\\HawkProject\\Source\\HawkProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}
