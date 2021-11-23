@@ -230,6 +230,12 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I ..\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles
+/I ..\Plugins\Runtime\PhysXVehicles\Source
+/I ..\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimGraphRuntime
+/I Runtime\AnimGraphRuntime\Public
+/I ..\Plugins\Runtime\PhysXVehicles\Source\ThirdParty
 /I "F:\Studio 2\Hawk-V-Zilla\HawkUE4\HawkProject\Intermediate\Build\Win64\UE4Editor\Inc\HawkProject"
 /I "F:\Studio 2\Hawk-V-Zilla\HawkUE4\HawkProject\Source"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality

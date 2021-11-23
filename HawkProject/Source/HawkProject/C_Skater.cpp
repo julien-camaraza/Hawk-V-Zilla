@@ -18,10 +18,6 @@ AC_Skater::AC_Skater()
 	root = CreateDefaultSubobject<USceneComponent>("root");
 	root->SetupAttachment(RootComponent);
 
-	// Create capsule component that will drive physics calculations
-	physicsCapsule = CreateDefaultSubobject<UCapsuleComponent>("physicsCapsule");
-	physicsCapsule->SetupAttachment(RootComponent);
-
 	//Creates skateboard mesh
 	skateboardMesh = CreateDefaultSubobject<UStaticMeshComponent>("skateboardMesh");
 	skateboardMesh->SetupAttachment(RootComponent);
@@ -29,6 +25,10 @@ AC_Skater::AC_Skater()
 	//Creates character skeleton
 	characterMesh = CreateDefaultSubobject<USkeletalMeshComponent>("characterMesh");
 	characterMesh->SetupAttachment(skateboardMesh);
+
+	// Create capsule component that will drive physics calculations
+	physicsCapsule = CreateDefaultSubobject<UCapsuleComponent>("physicsCapsule");
+	physicsCapsule->SetupAttachment(skateboardMesh);
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -60,17 +60,13 @@ void AC_Skater::Tick(float DeltaTime)
 	//Get the physics capsule location and move the skateboard (and it's children) to it.
 	FVector capsuleLocation = physicsCapsule->GetComponentLocation();
 	skateboardMesh->SetWorldLocation(capsuleLocation);
-	//FQuat amountToMove = FQuat(0.f, 0.f, 0.f, 0.f);
-	//capsuleRotation = capsuleRotation + amountToMove;
-	//physicsCapsule->SetWorldRotation(capsuleRotation);
 
 	//Rotate the physics capsule on input
-	FRotator startingRot = skateboardMesh->GetComponentRotation().GetDenormalized();
-	
-	physicsCapsule->AddRelativeRotation(FRotator(0.f, (steeringRate * moveRightSave), 0.f).Quaternion());
 	skateboardMesh->AddRelativeRotation(FRotator(0.f, (steeringRate * moveRightSave), 0.f).Quaternion());
-
-	FRotator capsuleRotation = physicsCapsule->GetComponentRotation();
+	FRotator boardCurrentRotation = skateboardMesh->GetComponentRotation();
+	FRotator capsuleCurrentRotation = physicsCapsule->GetComponentRotation();
+	//physicsCapsule->SetWorldRotation(FRotator(capsuleCurrentRotation.Roll, boardCurrentRotation.Yaw, capsuleCurrentRotation.Pitch));
+	physicsCapsule->AddRelativeRotation(FRotator(0.0, (steeringRate * moveRightSave), 0.f).Quaternion());
 
 	// When the player inputs forwards or backwards, add force the to physics cylinder
 	force = (moveForward * speed) * (skateboardMesh->GetForwardVector());
@@ -100,8 +96,6 @@ void AC_Skater::Tick(float DeltaTime)
 		if ((steeringRate * moveRightSave) > 0)
 		{
 			physicsCapsule->AddForce(force * .25);
-			float FloatExample = 10.4;
-			UE_LOG(LogTemp, Warning, TEXT("Output: %f"), FloatExample);
 		} 
 	}
 
