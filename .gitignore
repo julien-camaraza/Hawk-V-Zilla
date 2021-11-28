@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.pdb
 
 # Precompiled Headers
 *.gch
@@ -72,3 +73,7 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+*.bin
+*.pak
+*.log
+HawkProject/Build/WindowsNoEditor/Manifest_NonUFSFiles_Win64.txt
