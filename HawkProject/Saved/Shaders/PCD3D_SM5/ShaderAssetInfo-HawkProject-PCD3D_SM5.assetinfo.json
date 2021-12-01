@@ -69,25 +69,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "C6D54895B9E1281698413E9BC3833382FE29DC21",
-			"Assets": [
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Meshes/CubeMaterial.uasset",
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/Geometry/Meshes/CubeMaterial.uasset"
-			]
-		},
-		{
-			"ShaderMapHash": "29D5E5A9772118A7A5A75131FCB983C30171715F",
-			"Assets": [
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Mannequin/Character/Materials/M_UE4Man_ChestLogo.uasset"
-			]
-		},
-		{
-			"ShaderMapHash": "5955D31DA1D64305C4B656F257539CF680F15414",
-			"Assets": [
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Mannequin/Character/Materials/M_Male_Body.uasset"
-			]
-		},
-		{
 			"ShaderMapHash": "1882B8A86961777F9222264C52EBE9583D56600D",
 			"Assets": [
 				"../../../Engine/Content/EngineDebugMaterials/WireframeMaterial.uasset"
@@ -245,15 +226,21 @@
 			]
 		},
 		{
-			"ShaderMapHash": "83CC6FB960EF114A33EE13E38D7237DE3B4118F1",
+			"ShaderMapHash": "5955D31DA1D64305C4B656F257539CF680F15414",
 			"Assets": [
-				"../../Plugins/FX/Niagara/Content/DefaultAssets/DefaultSpriteMaterial.uasset"
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Mannequin/Character/Materials/M_Male_Body.uasset"
 			]
 		},
 		{
-			"ShaderMapHash": "278FA3EE19E4B4F71004C8D670E7C930C16BBB24",
+			"ShaderMapHash": "29D5E5A9772118A7A5A75131FCB983C30171715F",
 			"Assets": [
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/MaterialLibrary/M_3DIndicator.uasset"
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Mannequin/Character/Materials/M_UE4Man_ChestLogo.uasset"
+			]
+		},
+		{
+			"ShaderMapHash": "83CC6FB960EF114A33EE13E38D7237DE3B4118F1",
+			"Assets": [
+				"../../Plugins/FX/Niagara/Content/DefaultAssets/DefaultSpriteMaterial.uasset"
 			]
 		},
 		{
@@ -263,9 +250,15 @@
 			]
 		},
 		{
+			"ShaderMapHash": "278FA3EE19E4B4F71004C8D670E7C930C16BBB24",
+			"Assets": [
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/MaterialLibrary/M_3DIndicator.uasset"
+			]
+		},
+		{
 			"ShaderMapHash": "63A3BB54C66FE050D5E5D957FBFC527C1AE2EEF1",
 			"Assets": [
-				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/Characters/Kaiju/CharacterArt/mutant_M.uasset"
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/Characters/Kaiju/TestKaiju/CharacterArt/mutant_M.uasset"
 			]
 		},
 		{
@@ -281,9 +274,22 @@
 			]
 		},
 		{
+			"ShaderMapHash": "C6D54895B9E1281698413E9BC3833382FE29DC21",
+			"Assets": [
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/StarterContent/Meshes/CubeMaterial.uasset",
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/Geometry/Meshes/CubeMaterial.uasset"
+			]
+		},
+		{
 			"ShaderMapHash": "7A49726590FB14FEBC69D0AAE121480CE70D3966",
 			"Assets": [
 				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/ThirdPerson/Meshes/RampMaterial.uasset"
+			]
+		},
+		{
+			"ShaderMapHash": "2C6F0A3696138D148461A931EA4E474117760DB4",
+			"Assets": [
+				"F:/Studio 2/Hawk-V-Zilla/HawkUE4/HawkProject/Content/MapObjects/M_basicFloor.uasset"
 			]
 		}
 	]
